@@ -9,3 +9,4 @@ Another important aspect is to correctly preprocessing the input to fed in the D
 
 After training the network, the result obtained are overall satisfactory as shown in the following plot, where moving average as been applied to depict the trend of the score with respect to the number of games. 
 
+<a href="url"><img src="https://github.com/gianluca-maselli/DQN_Atari/blob/main/plot/scores_pong.png" height="370" width="600" ></a>
