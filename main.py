@@ -21,9 +21,6 @@ device = torch.device(dev)
 
 print(device)
 
-all_envs = gym.envs.registry.all()
-atari_envs = [env_spec for env_spec in all_envs if 'atari' in env_spec.entry_point]
-print([env_spec.id for env_spec in atari_envs])
 
 # ---- generate the environment ----- #
 #env = gym.make("SpaceInvaders-v0")
