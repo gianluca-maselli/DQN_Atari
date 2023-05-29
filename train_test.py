@@ -148,7 +148,7 @@ def train_DQN(env,max_frame, queue, model, epsilon_start, n_frames, gamma, crite
             print(' \n AVG last 100 games: ', avg)
             #if we reached the desired avg on the last 100 games, break and stop training
             if avg >= mean_reward:
-                torch.save(model, './trained_model/model.pkl')
+                torch.save(model, './trained_model/model.pt')
                 print("Solved in %d frames!" % frame_idx)
                 break
         
