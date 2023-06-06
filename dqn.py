@@ -19,7 +19,8 @@ class DQN(torch.nn.Module):
         out_conv = self.c3(out_conv)
         out_conv = self.relu(out_conv)
         flat = self.flatten(out_conv)
-        fc_out = self.fc1(flat)
-        out = self.fc2(fc_out)
+        out = self.fc1(flat)
+        out = self.relu(out)
+        out = self.fc2(out)
         
         return out
